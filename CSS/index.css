@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* General Colors */
+:root {
+    --dark-oxford-blue: #060020;
+    --oxford-blue: #080028;
+    --light-oxford-blue: #0B032B;
+    --ultra-dark-russian-violet: #090030;
+    --darker-russian-violet: #0B0038;
+    --dark-russian-violet: #0C003C;
+    --russian-violet: #0C0040;
+    --light-russian-violet: #170C49;
+    --lighter-russian-violet: #1D124D;
+    --ultra-lighter-russian-violet: #221751;
+    --navy-blue: #180080;
+    --ultramarine: #271088;
+    --indigo: #352090;
+    --rebecca-purple: #5240A0;
+    --slate-blue: #6F60B0;
+    --tropical-indigo: #8C80C0;
+    --lavender-web: #E5E0FF;
+    --magnolia: #F2F0FF;
+    --ghost-white: #F9F8FF;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--oxford-blue);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    background: var(--ghost-white);
+}
+
+.home_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(248, 249, 255, 0.4);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(200, 212, 200, 0.4);
+    z-index: 1;
+}
+
+.header {
+    position: relative;
+    max-width: calc(1080px + 32px);
+    margin: 0 auto;
+    padding: 0 16px;
+    z-index: 2;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 56px;
+}
+
+.header_logo {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: 0.4s;
+}
+
+.header_logo:hover {
+    opacity: 0.6;
+}
+
+.header_links {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_link {
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header_buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header_button {
+    padding: 5px 20px;
+    border: 0;
+    border-radius: 24px;
+
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--ghost-white);
+    background-color: var(--dark-oxford-blue);
+
+    transition: 0.4s;
+}
+
+.header_button:hover {
+    opacity: 0.8;
+}
+
+.home_main {
+    margin: 0 auto;
+    padding: 100px 0px;
+    width: 1080px;
+    height: 100vh;
+}
